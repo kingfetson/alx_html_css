@@ -43,7 +43,7 @@ Welcome to the **Smileschool** clone project! This web page is a static, respons
 
 ## 📷 Preview
 
-> ![Screenshot Preview](https://fakeimg.pl/1200x600?text=Screenshot+Preview)  
+> ![Screenshot Preview](images/homepage(copy).jpg)  
 > *(Replace with real screenshot if needed)*
 
 ## 📦 Getting Started

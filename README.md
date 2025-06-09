@@ -71,11 +71,7 @@ The project was developed based on the attached design, which features:
 
 Here’s a preview of the implemented design:
 
-<<<<<<< HEAD
 ![Homepage](css_advanced/images/homepage(copy).jpg)
-=======
-![Homepage](images/Homepage(Copy).jpg)
->>>>>>> 1e9195a (deleted readme.md file in css_basic)
 
 ---
 

@@ -71,7 +71,7 @@ The project was developed based on the attached design, which features:
 
 Here’s a preview of the implemented design:
 
-![Homepage](../../../../images/Homepage%20(Copy).png)
+![Homepage](css_advanced/images/homepage(copy).jpg)
 
 ---
 

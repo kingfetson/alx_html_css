@@ -48,8 +48,14 @@ Welcome to the **Smileschool** clone project! This web page is a static, respons
 
 ## 📷 Preview
 
+<<<<<<< HEAD
 > ![Screenshot Preview](images/homepage(copy).jpg)  
 > *(Replace with real screenshot if needed)*
+=======
+ >Here’s a preview of the implemented design:
+
+![Homepage](/workspaces/alx_html_css/css_advanced/images/8.png)
+>>>>>>> 1e9195a (deleted readme.md file in css_basic)
 
 ## 📦 Getting Started
 

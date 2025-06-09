@@ -28,15 +28,20 @@ Welcome to the **Smileschool** clone project! This web page is a static, respons
 ├── index.html
 ├── styles.css
 ├── images/
-│ ├── 1 (3).png
+│ ├── 1.png
+│ ├── 2.png
+│ ├── 3.png
+│ ├── 4.png
+│ ├── 5.png
 │ ├── 6.png
 │ ├── 7.png
 │ ├── 8.png
-│ ├── Bitmap.png
-│ ├── Bitmap (1).png
-│ ├── Bitmap (2).png
-│ ├── Bitmap (3).png
-│ ├── Bitmap (4).png
+  ├── 9.png
+│ ├── Object.png
+│ ├── homepage(copy).jpg
+│ ├── logo.png
+│ ├── play.png
+│ ├── rating.png
 │ └── smile.svg
 └── README.md
 
@@ -58,10 +63,10 @@ To run this project locally:
 open index.html
 (Optional) If you're using a live server extension, right-click index.html and select "Open with Live Server".
 
-🧑‍🎓 Author
-Your Name
-Frontend Developer | ALX Student
-Portfolio | LinkedIn | GitHub
+## Author
+#### @kingfestson
+#### Frontend Developer | ALX Student
+#### Portfolio | LinkedIn | GitHub
 
 ✅ License
 This project is for educational purposes only and not for commercial use.

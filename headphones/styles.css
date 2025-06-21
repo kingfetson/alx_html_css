@@ -15,7 +15,9 @@ a {
 }
 
 .hero {
-  background: url('hero-bg.jpg') center/cover no-repeat;
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -26,6 +28,48 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+/* Header container styles */
+.container.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* Logo and text */
+.logo {
+  width: 200px;   /* Increase this value as needed */
+  height: auto;
+  vertical-align: middle;
+}
+
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Navigation styles */
+.desktop-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Mobile menu icon */
+.mobile-menu {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -86,10 +130,11 @@ input, textarea {
 }
 
 footer {
-  background-color: #0a0a23;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+  background-image: url('images/headphones_hero_2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Ensures footer text is visible */
+  padding: 40px 0;
 }
 
 .footer-content {
@@ -102,9 +147,34 @@ footer {
 .socials a {
   margin: 0 10px;
 }
+
+footer .copyright {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 1em;
+}
+
 @media screen and (max-width: 480px) {
   /* Mobile styles here */
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .container.nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-text {
+    font-size: 1.2em;
+  }
+}
+
 /* Link hover/active */
 a:hover,
 a:active {

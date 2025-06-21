@@ -1,0 +1,208 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #0c0c0c;
+}
+
+/* Variables */
+:root {
+  --main-red: #ff6565;
+}
+
+/* Header */
+header {
+  background: transparent;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 350px;
+  vertical-align: middle;
+  height: 32px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-nav a:hover {
+  color: var(--main-red);
+}
+
+.mobile-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 90%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background: var(--main-red);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff5c5c;
+  transform: scale(1.2);
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.pentagon-badge {
+  width: 120px;
+  height: 120px;
+  background: var(--main-red);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    81% 100%,
+    19% 100%,
+    0% 38%
+  );
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+
+.pentagon-badge:hover {
+  transform: scale(1.08) rotate(-2deg);
+  background: #ff7b7b;
+}
+
+.badge-value {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-label {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
+/* Fun animation for section items */
+@keyframes fun-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.08) rotate(-2deg); }
+}
+
+.what-we-do .icon-card,
+.results .icon-card,
+.results .pentagon-badge {
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+  animation: fun-bounce 2s infinite;
+}
+
+.what-we-do .icon-card:hover,
+.results .icon-card:hover,
+.results .pentagon-badge:hover {
+  transform: scale(1.12) rotate(3deg);
+  box-shadow: 0 8px 32px rgba(255,101,101,0.25);
+  opacity: 0.92;
+  animation: none;
+}

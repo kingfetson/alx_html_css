@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Headphones</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Responsive navigation styles */
+    .desktop-nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      transition: all 0.3s;
+    }
+    .mobile-menu {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #fff;
+      margin-left: 1rem;
+      z-index: 1001;
+    }
+    @media (max-width: 480px) {
+      .desktop-nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100vw;
+        background: #181818;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 1rem;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .desktop-nav.open {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .mobile-menu {
+        display: block;
+      }
+      .container.nav {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <img src="/workspaces/alx_html_css/headphones/images/logo_headphones.png" alt="Headphones Logo" class="logo">
+      <span class="logo-text">Headphones</span>
+      <nav class="desktop-nav" id="mainNav">
+        <a href="#">what we do</a>
+        <a href="#">our results</a>
+        <a href="#">contact us</a>
+      </nav>
+      <button class="mobile-menu" id="hamburger" aria-label="Open navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <button class="cta">CALL TO ACTION</button>
+    </div>
+  </section>
+
+  <section class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </section>
+
+  <section class="results">
+    <h2>Our results speak for themselves</h2>
+    <div class="badges">
+      <div class="icon-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>+2%</h3>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-users"></i>
+        <h3>+2%</h3>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-headphones"></i>
+        <h3>+2%</h3>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="icon-card">
+        <i class="fas fa-music"></i>
+        <h3>+2%</h3>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <form>
+      <input type="text" placeholder="Name" name="name" required minlength="2" maxlength="30" pattern="[A-Za-z\s]+" />
+      <input type="email" placeholder="Email" name="email" required />
+      <textarea placeholder="Your message" name="message" required minlength="10" maxlength="300"></textarea>
+      <button type="submit" class="btn">Call to action</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        © 2025 Headphones. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="8-script.js"></script>
+</body>
+</html>

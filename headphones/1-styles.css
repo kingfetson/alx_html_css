@@ -1,0 +1,124 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #0c0c0c;
+}
+
+/* Variables */
+:root {
+  --main-red: #ff6565;
+}
+
+/* Header */
+header {
+  background: transparent;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 350px;
+  vertical-align: middle;
+  height: 32px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-nav a:hover {
+  color: var(--main-red);
+}
+
+.mobile-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 90%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background: var(--main-red);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
